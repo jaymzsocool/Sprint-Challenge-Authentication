@@ -29,17 +29,18 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="">
+            <div className="form-wrap">
+                <h2>Please Log In</h2>
                 <form onSubmit = {this.signin}>
-                    <div className="">
+                    <div className="form">
                         <label>Username</label>
                         <input name = 'username' value = {this.state.username} onChange = {this.handleChange} type="text"></input>
                     </div>
-                    <div className="">
+                    <div className="form">
                         <label>Password</label>
                         <input name = 'password' value = {this.state.password} onChange = {this.handleChange} type="password"></input>
                     </div>
-                    <div className="">
+                    <div className="form-btn">
                         <button type = "submit">Sign In</button>
                         <Link to = '/'><button>Back</button></Link>
                     </div>

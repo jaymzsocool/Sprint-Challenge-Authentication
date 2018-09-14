@@ -28,17 +28,18 @@ class Register extends Component {
 
     render() {
         return (
-            <div className="">
+            <div className="form-wrap">
+                <h2>Please Register</h2>
                 <form onSubmit = {this.signin}>
-                    <div>
+                    <div className="form">
                         <label>Username</label>
                         <input name = 'username' value = {this.state.username} onChange = {this.handleChange} type="text"></input>
                     </div>
-                    <div>
+                    <div className="form">
                         <label>Password</label>
                         <input name = 'password' value = {this.state.password} onChange = {this.handleChange} type="password"></input>
                     </div>
-                    <div>
+                    <div className="form-btn">
                         <button type = "submit">Register</button>
                         <Link to = '/'><button>Back</button></Link>
                     </div>
