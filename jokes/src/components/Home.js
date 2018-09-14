@@ -4,9 +4,13 @@ import {Link} from 'react-router-dom'
 class Home extends Component {  
     render() {
         return (
-            <div>
-                <Link to = '/register'>Register</Link>
-                <Link to = '/login'>Login</Link>
+            <div className="home-wrap">
+                <h1 className="home-title">Welcome to Premium Dad Jokes!</h1>                
+                <div className="home-links">
+                    <Link to = '/register'><button>Register</button></Link>
+                    <Link to = '/login'><button>Login</button></Link>
+                </div>
+                
             </div>            
         );
     }

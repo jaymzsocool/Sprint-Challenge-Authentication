@@ -35,17 +35,16 @@ class Jokes extends Component {
         return (
             (this.state.jokes.length>0)
             ?
-            <div>
-                <button onClick = {this.logOut}>Sign Out</button>
-                <div>
+            <div className="jokes">
+                <button className="signout" onClick = {this.logOut}>Sign Out</button>
+                <div className="jokes-list">
                     {this.state.jokes.map(joke => 
                         <JokeCard handleClick = {this.selectJoke} key = {joke.id} setup = {joke.setup} punchline = {joke.punchline} />
                     )}
-                </div>
-                
+                </div>                
             </div>
             :
-            <div>
+            <div className="">
                 Loading List...
             </div>
         );

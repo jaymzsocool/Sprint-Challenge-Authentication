@@ -14,14 +14,14 @@ class JokeCard extends Component{
 
     render(){
         return (
-            <div onClick={this.toggleActive}>
+            <div onClick={this.toggleActive} className="card-wrap">
                 {(!this.state.active)
                 ?
-                <div>
+                <div className="card-content">
                     {this.props.setup}           
                 </div>
                 :
-                <div>
+                <div className="card-content">
                     {this.props.punchline}
                 </div>}
             </div>        

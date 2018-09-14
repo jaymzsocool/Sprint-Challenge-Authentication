@@ -28,20 +28,23 @@ class Register extends Component {
 
     render() {
         return (
-            <form onSubmit = {this.signin}>
-                <div>
-                    <label>Username</label>
-                    <input name = 'username' value = {this.state.username} onChange = {this.handleChange} type="text"></input>
-                </div>
-                <div>
-                    <label>Password</label>
-                    <input name = 'password' value = {this.state.password} onChange = {this.handleChange} type="password"></input>
-                </div>
-                <div>
-                    <button type = "submit">Register</button>
-                    <Link to = '/'><button>Back</button></Link>
-                </div>
-            </form>
+            <div className="">
+                <form onSubmit = {this.signin}>
+                    <div>
+                        <label>Username</label>
+                        <input name = 'username' value = {this.state.username} onChange = {this.handleChange} type="text"></input>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input name = 'password' value = {this.state.password} onChange = {this.handleChange} type="password"></input>
+                    </div>
+                    <div>
+                        <button type = "submit">Register</button>
+                        <Link to = '/'><button>Back</button></Link>
+                    </div>
+                </form>
+            </div>
+            
             );
     }
 }
